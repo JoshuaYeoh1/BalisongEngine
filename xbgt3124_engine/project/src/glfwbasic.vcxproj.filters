@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="BalisongEngine">
+      <UniqueIdentifier>{1ae2246b-45db-4869-a7e8-7e281a307489}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BalisongEngine\Components">
+      <UniqueIdentifier>{7a25e8fb-06f2-403e-85c3-506e343f0ff7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BalisongEngine\OCM">
+      <UniqueIdentifier>{16622688-c564-4162-b03d-c77a05d4dcdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BalisongEngine\Renderer">
+      <UniqueIdentifier>{c01806f5-cf08-435a-9d91-bb88249f346d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BalisongEngine\Scenes">
+      <UniqueIdentifier>{7034a8d2-0abe-4138-8623-45b8a4568abc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BalisongEngine\Framework">
+      <UniqueIdentifier>{8f5b75d0-82a2-4348-9db3-9f0e381e36e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BalisongEngine\Allocator">
+      <UniqueIdentifier>{8c388919-6173-4a54-8c4f-549f798007f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8f97c822-632d-43c1-b1df-a4936718f732}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="irrKlang">
+      <UniqueIdentifier>{d8c7f432-6b47-4b97-b173-fb135233974b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="irrKlang\include">
+      <UniqueIdentifier>{dabb56b4-cfca-43b6-a64f-c31004398b52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="irrKlang\lib">
+      <UniqueIdentifier>{23f457b7-2072-4d22-a472-3b33065ecdc5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="glad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Allocator\Allocator.cpp">
+      <Filter>BalisongEngine\Allocator</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Allocator\BaseResource.cpp">
+      <Filter>BalisongEngine\Allocator</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Allocator\PoolAllocator.cpp">
+      <Filter>BalisongEngine\Allocator</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Components\BarComponent.cpp">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Components\BaseComponent.cpp">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Components\ButtonComponent.cpp">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Components\MoveComponent.cpp">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Components\PlayerMoveComponent.cpp">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Components\SimpleShootComponent.cpp">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Components\SineTransformComponent.cpp">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Components\SpinComponent.cpp">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Components\SpriteRendererComponent.cpp">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Components\TestComponents.cpp">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Components\TimerComponent.cpp">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Components\TransformComponent.cpp">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Framework\Application.cpp">
+      <Filter>BalisongEngine\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Framework\AppWindow.cpp">
+      <Filter>BalisongEngine\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Framework\Input.cpp">
+      <Filter>BalisongEngine\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Framework\Random.cpp">
+      <Filter>BalisongEngine\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Framework\TimeEngine.cpp">
+      <Filter>BalisongEngine\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\OCM\GameObject.cpp">
+      <Filter>BalisongEngine\OCM</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\OCM\GameObjectCollection.cpp">
+      <Filter>BalisongEngine\OCM</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Renderer\Camera.cpp">
+      <Filter>BalisongEngine\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Renderer\Graphics.cpp">
+      <Filter>BalisongEngine\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Renderer\Mesh.cpp">
+      <Filter>BalisongEngine\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Renderer\Renderer.cpp">
+      <Filter>BalisongEngine\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Renderer\Texture2D.cpp">
+      <Filter>BalisongEngine\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Scenes\BaseScene.cpp">
+      <Filter>BalisongEngine\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Scenes\InputTestScene.cpp">
+      <Filter>BalisongEngine\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Scenes\SceneStateMachine.cpp">
+      <Filter>BalisongEngine\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Scenes\ShowcaseScene.cpp">
+      <Filter>BalisongEngine\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Scenes\SplashScene.cpp">
+      <Filter>BalisongEngine\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Scenes\TestScene.cpp">
+      <Filter>BalisongEngine\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Scenes\MainMenuScene.cpp">
+      <Filter>BalisongEngine\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Scenes\LevelScene.cpp">
+      <Filter>BalisongEngine\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Components\FollowMouseComponent.cpp">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Components\PursuitComponent.cpp">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Components\VelocityMeterComponent.cpp">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Components\AnimatorComponent.cpp">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Components\MoveAnimComponent.cpp">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\OCM\Prefabs.cpp">
+      <Filter>BalisongEngine\OCM</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\OCM\PrefabManager.cpp">
+      <Filter>BalisongEngine\OCM</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Components\ShootComponent.cpp">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Components\EnemySpawnerComponent.cpp">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Components\CameraBorderComponent.cpp">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Components\SpawnOnDestroyComponent.cpp">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Components\RandomTransformComponent.cpp">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Components\BoxColliderComponent.cpp">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Components\CircleColliderComponent.cpp">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Components\ColliderComponent.cpp">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\OCM\ColliderManager.cpp">
+      <Filter>BalisongEngine\OCM</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Framework\Gizmos.cpp">
+      <Filter>BalisongEngine\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Components\DestroyOnCollideComponent.cpp">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Components\DeflectComponent.cpp">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Components\AudioSourceComponent.cpp">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Components\SpawnOnCollideComponent.cpp">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Framework\AudioManager.cpp">
+      <Filter>BalisongEngine\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\OCM\GameObjectRef.cpp">
+      <Filter>BalisongEngine\OCM</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\OCM\GameObjectRefSet.cpp">
+      <Filter>BalisongEngine\OCM</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Components\ScrollerComponent.cpp">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Scenes\CreditsScene.cpp">
+      <Filter>BalisongEngine\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="BalisongEngine\Components\FollowCameraComponent.cpp">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BalisongEngine\Allocator\Allocator.h">
+      <Filter>BalisongEngine\Allocator</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Allocator\BaseResource.h">
+      <Filter>BalisongEngine\Allocator</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Allocator\PoolAllocator.h">
+      <Filter>BalisongEngine\Allocator</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Components\BarComponent.h">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Components\BaseComponent.h">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Components\ButtonComponent.h">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Components\MoveComponent.h">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Components\PlayerMoveComponent.h">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Components\SimpleShootComponent.h">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Components\SineTransformComponent.h">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Components\SpinComponent.h">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Components\SpriteRendererComponent.h">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Components\TestComponents.h">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Components\TimerComponent.h">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Components\TransformComponent.h">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Framework\ActionEvent.h">
+      <Filter>BalisongEngine\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Framework\Application.h">
+      <Filter>BalisongEngine\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Framework\AppWindow.h">
+      <Filter>BalisongEngine\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Framework\Input.h">
+      <Filter>BalisongEngine\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Framework\Random.h">
+      <Filter>BalisongEngine\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Framework\TimeEngine.h">
+      <Filter>BalisongEngine\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\OCM\GameObject.h">
+      <Filter>BalisongEngine\OCM</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\OCM\GameObjectCollection.h">
+      <Filter>BalisongEngine\OCM</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Renderer\Camera.h">
+      <Filter>BalisongEngine\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Renderer\Graphics.h">
+      <Filter>BalisongEngine\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Renderer\Mesh.h">
+      <Filter>BalisongEngine\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Renderer\Renderer.h">
+      <Filter>BalisongEngine\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Renderer\Texture2D.h">
+      <Filter>BalisongEngine\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Scenes\BaseScene.h">
+      <Filter>BalisongEngine\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Scenes\InputTestScene.h">
+      <Filter>BalisongEngine\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Scenes\SceneStateMachine.h">
+      <Filter>BalisongEngine\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Scenes\ShowcaseScene.h">
+      <Filter>BalisongEngine\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Scenes\SplashScene.h">
+      <Filter>BalisongEngine\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Scenes\TestScene.h">
+      <Filter>BalisongEngine\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Scenes\MainMenuScene.h">
+      <Filter>BalisongEngine\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Scenes\LevelScene.h">
+      <Filter>BalisongEngine\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Components\FollowMouseComponent.h">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Components\PursuitComponent.h">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Components\VelocityMeterComponent.h">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Components\AnimatorComponent.h">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Components\MoveAnimComponent.h">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\OCM\Prefab.h">
+      <Filter>BalisongEngine\OCM</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\OCM\Prefabs.h">
+      <Filter>BalisongEngine\OCM</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\OCM\PrefabManager.h">
+      <Filter>BalisongEngine\OCM</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Components\ShootComponent.h">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Components\EnemySpawnerComponent.h">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Components\CameraBorderComponent.h">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Components\SpawnOnDestroyComponent.h">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Components\RandomTransformComponent.h">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Components\ColliderComponent.h">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Components\BoxColliderComponent.h">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Components\CircleColliderComponent.h">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\OCM\ColliderManager.h">
+      <Filter>BalisongEngine\OCM</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Framework\Gizmos.h">
+      <Filter>BalisongEngine\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Components\DestroyOnCollideComponent.h">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Components\DeflectComponent.h">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Components\AudioSourceComponent.h">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Components\SpawnOnCollideComponent.h">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="irrKlang\include\ik_ESoundEngineOptions.h">
+      <Filter>irrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="irrKlang\include\ik_ESoundOutputDrivers.h">
+      <Filter>irrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="irrKlang\include\ik_EStreamModes.h">
+      <Filter>irrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="irrKlang\include\ik_IAudioRecorder.h">
+      <Filter>irrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="irrKlang\include\ik_IAudioStream.h">
+      <Filter>irrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="irrKlang\include\ik_IAudioStreamLoader.h">
+      <Filter>irrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="irrKlang\include\ik_IFileFactory.h">
+      <Filter>irrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="irrKlang\include\ik_IFileReader.h">
+      <Filter>irrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="irrKlang\include\ik_IRefCounted.h">
+      <Filter>irrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="irrKlang\include\ik_irrKlangTypes.h">
+      <Filter>irrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="irrKlang\include\ik_ISound.h">
+      <Filter>irrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="irrKlang\include\ik_ISoundDeviceList.h">
+      <Filter>irrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="irrKlang\include\ik_ISoundEffectControl.h">
+      <Filter>irrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="irrKlang\include\ik_ISoundEngine.h">
+      <Filter>irrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="irrKlang\include\ik_ISoundMixedOutputReceiver.h">
+      <Filter>irrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="irrKlang\include\ik_ISoundSource.h">
+      <Filter>irrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="irrKlang\include\ik_ISoundStopEventReceiver.h">
+      <Filter>irrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="irrKlang\include\ik_IVirtualRefCounted.h">
+      <Filter>irrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="irrKlang\include\ik_SAudioStreamFormat.h">
+      <Filter>irrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="irrKlang\include\ik_vec3d.h">
+      <Filter>irrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="irrKlang\include\irrKlang.h">
+      <Filter>irrKlang\include</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Framework\AudioManager.h">
+      <Filter>BalisongEngine\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\OCM\GameObjectRef.h">
+      <Filter>BalisongEngine\OCM</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\OCM\GameObjectRefSet.h">
+      <Filter>BalisongEngine\OCM</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Components\ScrollerComponent.h">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Scenes\CreditsScene.h">
+      <Filter>BalisongEngine\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="BalisongEngine\Components\FollowCameraComponent.h">
+      <Filter>BalisongEngine\Components</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="irrKlang\lib\Winx64-visualStudio\irrKlang.exp">
+      <Filter>irrKlang\lib</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="irrKlang\lib\Winx64-visualStudio\irrKlang.lib">
+      <Filter>irrKlang\lib</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
