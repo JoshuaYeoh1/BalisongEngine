@@ -1,0 +1,76 @@
+var namespaceirrklang =
+[
+    [ "IAudioRecorder", "classirrklang_1_1_i_audio_recorder.html", "classirrklang_1_1_i_audio_recorder" ],
+    [ "IAudioStream", "classirrklang_1_1_i_audio_stream.html", "classirrklang_1_1_i_audio_stream" ],
+    [ "IAudioStreamLoader", "classirrklang_1_1_i_audio_stream_loader.html", "classirrklang_1_1_i_audio_stream_loader" ],
+    [ "ICapturedAudioDataReceiver", "classirrklang_1_1_i_captured_audio_data_receiver.html", "classirrklang_1_1_i_captured_audio_data_receiver" ],
+    [ "IFileFactory", "classirrklang_1_1_i_file_factory.html", "classirrklang_1_1_i_file_factory" ],
+    [ "IFileReader", "classirrklang_1_1_i_file_reader.html", "classirrklang_1_1_i_file_reader" ],
+    [ "IRefCounted", "classirrklang_1_1_i_ref_counted.html", "classirrklang_1_1_i_ref_counted" ],
+    [ "ISound", "classirrklang_1_1_i_sound.html", "classirrklang_1_1_i_sound" ],
+    [ "ISoundDeviceList", "classirrklang_1_1_i_sound_device_list.html", "classirrklang_1_1_i_sound_device_list" ],
+    [ "ISoundEffectControl", "classirrklang_1_1_i_sound_effect_control.html", "classirrklang_1_1_i_sound_effect_control" ],
+    [ "ISoundEngine", "classirrklang_1_1_i_sound_engine.html", "classirrklang_1_1_i_sound_engine" ],
+    [ "ISoundMixedOutputReceiver", "classirrklang_1_1_i_sound_mixed_output_receiver.html", "classirrklang_1_1_i_sound_mixed_output_receiver" ],
+    [ "ISoundSource", "classirrklang_1_1_i_sound_source.html", "classirrklang_1_1_i_sound_source" ],
+    [ "ISoundStopEventReceiver", "classirrklang_1_1_i_sound_stop_event_receiver.html", "classirrklang_1_1_i_sound_stop_event_receiver" ],
+    [ "IVirtualRefCounted", "classirrklang_1_1_i_virtual_ref_counted.html", "classirrklang_1_1_i_virtual_ref_counted" ],
+    [ "SAudioStreamFormat", "structirrklang_1_1_s_audio_stream_format.html", "structirrklang_1_1_s_audio_stream_format" ],
+    [ "SInternalAudioInterface", "structirrklang_1_1_s_internal_audio_interface.html", "structirrklang_1_1_s_internal_audio_interface" ],
+    [ "vec3d", "classirrklang_1_1vec3d.html", "classirrklang_1_1vec3d" ],
+    [ "ik_c8", "namespaceirrklang.html#af179ad966eb79d01f6d1cf8927087449", null ],
+    [ "ik_f32", "namespaceirrklang.html#a6fa5a4dd85b476308461136072ef4e0f", null ],
+    [ "ik_f64", "namespaceirrklang.html#a1c98510aa3989b1780723e2fb15f7c3d", null ],
+    [ "ik_s16", "namespaceirrklang.html#ab884b7693f13e37d94fcbbff6b93adcf", null ],
+    [ "ik_s32", "namespaceirrklang.html#af8028b1c477e50d479270611ecb76e92", null ],
+    [ "ik_s8", "namespaceirrklang.html#a703d5c51092cc0731dd302f9c8d83613", null ],
+    [ "ik_u16", "namespaceirrklang.html#a16e9eaf54fbe344a86cb9b93290d59d9", null ],
+    [ "ik_u32", "namespaceirrklang.html#adf9f75b6ca98aff6843fb294125571e0", null ],
+    [ "ik_u8", "namespaceirrklang.html#af1928ef855711d24f793f841013f000e", null ],
+    [ "vec3df", "namespaceirrklang.html#a592332840fd1799b7c73bcc4c0c4a5af", null ],
+    [ "vec3di", "namespaceirrklang.html#a96ca718557ff7197905483b21f781d26", null ],
+    [ "E_SOUND_ENGINE_OPTIONS", "namespaceirrklang.html#ac9155ff55b347df6e905462100762d7f", [
+      [ "ESEO_MULTI_THREADED", "namespaceirrklang.html#ac9155ff55b347df6e905462100762d7fa83d61c032b77336f4a4a2b506e1c9e24", null ],
+      [ "ESEO_MUTE_IF_NOT_FOCUSED", "namespaceirrklang.html#ac9155ff55b347df6e905462100762d7faf7a3169d7e1fa394035639eaf1bd5b1e", null ],
+      [ "ESEO_LOAD_PLUGINS", "namespaceirrklang.html#ac9155ff55b347df6e905462100762d7fafda608a17564b562a9a43b7934a387e8", null ],
+      [ "ESEO_USE_3D_BUFFERS", "namespaceirrklang.html#ac9155ff55b347df6e905462100762d7fa76f687a07c0fe42e0af47098a6c58286", null ],
+      [ "ESEO_PRINT_DEBUG_INFO_TO_DEBUGGER", "namespaceirrklang.html#ac9155ff55b347df6e905462100762d7faa5b12b3061e7ba5898e9a502de47bb8e", null ],
+      [ "ESEO_PRINT_DEBUG_INFO_TO_STDOUT", "namespaceirrklang.html#ac9155ff55b347df6e905462100762d7fa6a103ac05a294aea210fd0bb14dd8241", null ],
+      [ "ESEO_LINEAR_ROLLOFF", "namespaceirrklang.html#ac9155ff55b347df6e905462100762d7fa4600bc37a0bf0b999562d59bec094c05", null ],
+      [ "ESEO_DEFAULT_OPTIONS", "namespaceirrklang.html#ac9155ff55b347df6e905462100762d7facca58ad3ee7e3c2e874bc4015f36f2a9", null ],
+      [ "ESEO_FORCE_32_BIT", "namespaceirrklang.html#ac9155ff55b347df6e905462100762d7fada32d5c6ec9eb5cfa818184faf87eb6a", null ]
+    ] ],
+    [ "E_SOUND_OUTPUT_DRIVER", "namespaceirrklang.html#a77f31ac02a7d33fe94807be709f72afe", [
+      [ "ESOD_AUTO_DETECT", "namespaceirrklang.html#a77f31ac02a7d33fe94807be709f72afea8cc9863f3b410698313b8637721e51ec", null ],
+      [ "ESOD_DIRECT_SOUND_8", "namespaceirrklang.html#a77f31ac02a7d33fe94807be709f72afea6fcd5ec6152066313ef04d97ea5582ee", null ],
+      [ "ESOD_DIRECT_SOUND", "namespaceirrklang.html#a77f31ac02a7d33fe94807be709f72afea41cdbf2b330293f9c8be2c5a53197258", null ],
+      [ "ESOD_WIN_MM", "namespaceirrklang.html#a77f31ac02a7d33fe94807be709f72afea618f53c155e92cca2b3b69865b48335a", null ],
+      [ "ESOD_ALSA", "namespaceirrklang.html#a77f31ac02a7d33fe94807be709f72afea776337cd0b6eeb6cbf171889ca4100c1", null ],
+      [ "ESOD_CORE_AUDIO", "namespaceirrklang.html#a77f31ac02a7d33fe94807be709f72afea0b3dfa7418df1cf47c77ad2370533332", null ],
+      [ "ESOD_NULL", "namespaceirrklang.html#a77f31ac02a7d33fe94807be709f72afea942ffa317debc447cae5bfab10b67c9c", null ],
+      [ "ESOD_COUNT", "namespaceirrklang.html#a77f31ac02a7d33fe94807be709f72afeaf4138be4b36d3e0c5a7a09bc1422c9bf", null ],
+      [ "ESOD_FORCE_32_BIT", "namespaceirrklang.html#a77f31ac02a7d33fe94807be709f72afea6dc399ba0785f1435c2e2c9cd5478c3f", null ]
+    ] ],
+    [ "E_STOP_EVENT_CAUSE", "namespaceirrklang.html#a17ebb006afe78ab6502a1e3d18083522", [
+      [ "ESEC_SOUND_FINISHED_PLAYING", "namespaceirrklang.html#a17ebb006afe78ab6502a1e3d18083522ac77937ae9e225a3a42775bc086e93158", null ],
+      [ "ESEC_SOUND_STOPPED_BY_USER", "namespaceirrklang.html#a17ebb006afe78ab6502a1e3d18083522a5d688aec69b83583382e370a332cdb45", null ],
+      [ "ESEC_SOUND_STOPPED_BY_SOURCE_REMOVAL", "namespaceirrklang.html#a17ebb006afe78ab6502a1e3d18083522a1d582aee4156ea2b5952a314f03a78ca", null ],
+      [ "ESEC_FORCE_32_BIT", "namespaceirrklang.html#a17ebb006afe78ab6502a1e3d18083522a3ebc8c5fc80207284388d61d2644bd31", null ]
+    ] ],
+    [ "E_STREAM_MODE", "namespaceirrklang.html#a6eab873ba387c6a4e05839e6a434d06e", [
+      [ "ESM_AUTO_DETECT", "namespaceirrklang.html#a6eab873ba387c6a4e05839e6a434d06ea9ccdf79afdb2961edf97edf4575d1717", null ],
+      [ "ESM_STREAMING", "namespaceirrklang.html#a6eab873ba387c6a4e05839e6a434d06ea2d72368b13fbbb1ce9708d829198a24b", null ],
+      [ "ESM_NO_STREAMING", "namespaceirrklang.html#a6eab873ba387c6a4e05839e6a434d06ea415ca3d09a13b086c078de0096430a07", null ],
+      [ "ESM_FORCE_32_BIT", "namespaceirrklang.html#a6eab873ba387c6a4e05839e6a434d06eabbfef2fbcff24a58a55051d9a7ff7b19", null ]
+    ] ],
+    [ "ESampleFormat", "namespaceirrklang.html#a2b85d1e9288cb552fceef8e8a726a80e", [
+      [ "ESF_U8", "namespaceirrklang.html#a2b85d1e9288cb552fceef8e8a726a80ea0de880c8a4d615e152bde20ec8444c44", null ],
+      [ "ESF_S16", "namespaceirrklang.html#a2b85d1e9288cb552fceef8e8a726a80eaa3dc63221ae7c396d6b32431da872104", null ]
+    ] ],
+    [ "createAudioRecorderDeviceList", "namespaceirrklang.html#a4673e594a8fa52defe1938c55ac89ff9", null ],
+    [ "createIrrKlangAudioRecorder", "namespaceirrklang.html#a899b6fae48281aa00122d389ef4eadb9", null ],
+    [ "createIrrKlangDevice", "namespaceirrklang.html#a3dbcf94d41d38e2048f8319843db1d70", null ],
+    [ "createSoundDeviceList", "namespaceirrklang.html#a62cd110fa05da7f8bc32ee3db16a1549", null ],
+    [ "equalsfloat", "namespaceirrklang.html#a6ce1a12052cdee7b6d81a053a73a4f86", null ],
+    [ "makeUTF8fromUTF16string", "namespaceirrklang.html#a2552f41aac247b77e0f1287c28744cd7", null ]
+];

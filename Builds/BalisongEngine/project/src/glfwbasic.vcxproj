@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{0776fe53-b873-42b4-8146-6b97deffb4dc}</ProjectGuid>
+    <RootNamespace>glfwbasic</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)\..\deps\include\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\..\deps\lib\glfw\;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)build\</OutDir>
+    <TargetName>$(ProjectName)_$(Configuration.toLower())</TargetName>
+    <IntDir>$(SolutionDir)temp\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <UndefinePreprocessorDefinitions>GLFW_INCLUDE_NONE;</UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\src;..\src\BalisongEngine;..\src\BalisongEngine\Allocator;..\src\BalisongEngine\Components;..\src\BalisongEngine\Framework;..\src\BalisongEngine\OCM;..\src\BalisongEngine\Renderer;..\src\BalisongEngine\Scenes;..\src\irrKlang;..\src\irrKlang\include;..\src\irrKlang\lib;..\src\irrKlang\lib\Winx64-visualStudio;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>Default</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BalisongEngine\Allocator\Allocator.cpp" />
+    <ClCompile Include="BalisongEngine\Allocator\BaseResource.cpp" />
+    <ClCompile Include="BalisongEngine\Allocator\PoolAllocator.cpp" />
+    <ClCompile Include="BalisongEngine\Components\AnimatorComponent.cpp" />
+    <ClCompile Include="BalisongEngine\Components\AudioSourceComponent.cpp" />
+    <ClCompile Include="BalisongEngine\Components\BarComponent.cpp" />
+    <ClCompile Include="BalisongEngine\Components\BaseComponent.cpp" />
+    <ClCompile Include="BalisongEngine\Components\BoxColliderComponent.cpp" />
+    <ClCompile Include="BalisongEngine\Components\ButtonComponent.cpp" />
+    <ClCompile Include="BalisongEngine\Components\CameraBorderComponent.cpp" />
+    <ClCompile Include="BalisongEngine\Components\CircleColliderComponent.cpp" />
+    <ClCompile Include="BalisongEngine\Components\ColliderComponent.cpp" />
+    <ClCompile Include="BalisongEngine\Components\DeflectComponent.cpp" />
+    <ClCompile Include="BalisongEngine\Components\DestroyOnCollideComponent.cpp" />
+    <ClCompile Include="BalisongEngine\Components\FollowCameraComponent.cpp" />
+    <ClCompile Include="BalisongEngine\Components\ScrollerComponent.cpp" />
+    <ClCompile Include="BalisongEngine\Components\ShootComponent.cpp" />
+    <ClCompile Include="BalisongEngine\Components\FollowMouseComponent.cpp" />
+    <ClCompile Include="BalisongEngine\Components\MoveAnimComponent.cpp" />
+    <ClCompile Include="BalisongEngine\Components\MoveComponent.cpp" />
+    <ClCompile Include="BalisongEngine\Components\PlayerMoveComponent.cpp" />
+    <ClCompile Include="BalisongEngine\Components\PursuitComponent.cpp" />
+    <ClCompile Include="BalisongEngine\Components\RandomTransformComponent.cpp" />
+    <ClCompile Include="BalisongEngine\Components\SimpleShootComponent.cpp" />
+    <ClCompile Include="BalisongEngine\Components\SineTransformComponent.cpp" />
+    <ClCompile Include="BalisongEngine\Components\EnemySpawnerComponent.cpp" />
+    <ClCompile Include="BalisongEngine\Components\SpawnOnCollideComponent.cpp" />
+    <ClCompile Include="BalisongEngine\Components\SpawnOnDestroyComponent.cpp" />
+    <ClCompile Include="BalisongEngine\Components\SpinComponent.cpp" />
+    <ClCompile Include="BalisongEngine\Components\SpriteRendererComponent.cpp" />
+    <ClCompile Include="BalisongEngine\Components\TestComponents.cpp" />
+    <ClCompile Include="BalisongEngine\Components\TimerComponent.cpp" />
+    <ClCompile Include="BalisongEngine\Components\TransformComponent.cpp" />
+    <ClCompile Include="BalisongEngine\Components\VelocityMeterComponent.cpp" />
+    <ClCompile Include="BalisongEngine\Framework\Application.cpp" />
+    <ClCompile Include="BalisongEngine\Framework\AppWindow.cpp" />
+    <ClCompile Include="BalisongEngine\Framework\AudioManager.cpp" />
+    <ClCompile Include="BalisongEngine\Framework\Gizmos.cpp" />
+    <ClCompile Include="BalisongEngine\Framework\Input.cpp" />
+    <ClCompile Include="BalisongEngine\Framework\Random.cpp" />
+    <ClCompile Include="BalisongEngine\Framework\TimeEngine.cpp" />
+    <ClCompile Include="BalisongEngine\OCM\ColliderManager.cpp" />
+    <ClCompile Include="BalisongEngine\OCM\GameObject.cpp" />
+    <ClCompile Include="BalisongEngine\OCM\GameObjectCollection.cpp" />
+    <ClCompile Include="BalisongEngine\OCM\GameObjectRef.cpp" />
+    <ClCompile Include="BalisongEngine\OCM\GameObjectRefSet.cpp" />
+    <ClCompile Include="BalisongEngine\OCM\PrefabManager.cpp" />
+    <ClCompile Include="BalisongEngine\OCM\Prefabs.cpp" />
+    <ClCompile Include="BalisongEngine\Renderer\Camera.cpp" />
+    <ClCompile Include="BalisongEngine\Renderer\Graphics.cpp" />
+    <ClCompile Include="BalisongEngine\Renderer\Mesh.cpp" />
+    <ClCompile Include="BalisongEngine\Renderer\Renderer.cpp" />
+    <ClCompile Include="BalisongEngine\Renderer\Texture2D.cpp" />
+    <ClCompile Include="BalisongEngine\Scenes\BaseScene.cpp" />
+    <ClCompile Include="BalisongEngine\Scenes\CreditsScene.cpp" />
+    <ClCompile Include="BalisongEngine\Scenes\InputTestScene.cpp" />
+    <ClCompile Include="BalisongEngine\Scenes\LevelScene.cpp" />
+    <ClCompile Include="BalisongEngine\Scenes\MainMenuScene.cpp" />
+    <ClCompile Include="BalisongEngine\Scenes\SceneStateMachine.cpp" />
+    <ClCompile Include="BalisongEngine\Scenes\ShowcaseScene.cpp" />
+    <ClCompile Include="BalisongEngine\Scenes\SplashScene.cpp" />
+    <ClCompile Include="BalisongEngine\Scenes\TestScene.cpp" />
+    <ClCompile Include="glad.c" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BalisongEngine\Allocator\Allocator.h" />
+    <ClInclude Include="BalisongEngine\Allocator\BaseResource.h" />
+    <ClInclude Include="BalisongEngine\Allocator\PoolAllocator.h" />
+    <ClInclude Include="BalisongEngine\Components\AnimatorComponent.h" />
+    <ClInclude Include="BalisongEngine\Components\AudioSourceComponent.h" />
+    <ClInclude Include="BalisongEngine\Components\BarComponent.h" />
+    <ClInclude Include="BalisongEngine\Components\BaseComponent.h" />
+    <ClInclude Include="BalisongEngine\Components\BoxColliderComponent.h" />
+    <ClInclude Include="BalisongEngine\Components\ButtonComponent.h" />
+    <ClInclude Include="BalisongEngine\Components\CameraBorderComponent.h" />
+    <ClInclude Include="BalisongEngine\Components\CircleColliderComponent.h" />
+    <ClInclude Include="BalisongEngine\Components\ColliderComponent.h" />
+    <ClInclude Include="BalisongEngine\Components\DeflectComponent.h" />
+    <ClInclude Include="BalisongEngine\Components\DestroyOnCollideComponent.h" />
+    <ClInclude Include="BalisongEngine\Components\FollowCameraComponent.h" />
+    <ClInclude Include="BalisongEngine\Components\ScrollerComponent.h" />
+    <ClInclude Include="BalisongEngine\Components\ShootComponent.h" />
+    <ClInclude Include="BalisongEngine\Components\FollowMouseComponent.h" />
+    <ClInclude Include="BalisongEngine\Components\MoveAnimComponent.h" />
+    <ClInclude Include="BalisongEngine\Components\MoveComponent.h" />
+    <ClInclude Include="BalisongEngine\Components\PlayerMoveComponent.h" />
+    <ClInclude Include="BalisongEngine\Components\PursuitComponent.h" />
+    <ClInclude Include="BalisongEngine\Components\RandomTransformComponent.h" />
+    <ClInclude Include="BalisongEngine\Components\SimpleShootComponent.h" />
+    <ClInclude Include="BalisongEngine\Components\SineTransformComponent.h" />
+    <ClInclude Include="BalisongEngine\Components\EnemySpawnerComponent.h" />
+    <ClInclude Include="BalisongEngine\Components\SpawnOnCollideComponent.h" />
+    <ClInclude Include="BalisongEngine\Components\SpawnOnDestroyComponent.h" />
+    <ClInclude Include="BalisongEngine\Components\SpinComponent.h" />
+    <ClInclude Include="BalisongEngine\Components\SpriteRendererComponent.h" />
+    <ClInclude Include="BalisongEngine\Components\TestComponents.h" />
+    <ClInclude Include="BalisongEngine\Components\TimerComponent.h" />
+    <ClInclude Include="BalisongEngine\Components\TransformComponent.h" />
+    <ClInclude Include="BalisongEngine\Components\VelocityMeterComponent.h" />
+    <ClInclude Include="BalisongEngine\Framework\ActionEvent.h" />
+    <ClInclude Include="BalisongEngine\Framework\Application.h" />
+    <ClInclude Include="BalisongEngine\Framework\AppWindow.h" />
+    <ClInclude Include="BalisongEngine\Framework\AudioManager.h" />
+    <ClInclude Include="BalisongEngine\Framework\Gizmos.h" />
+    <ClInclude Include="BalisongEngine\Framework\Input.h" />
+    <ClInclude Include="BalisongEngine\Framework\Random.h" />
+    <ClInclude Include="BalisongEngine\Framework\TimeEngine.h" />
+    <ClInclude Include="BalisongEngine\OCM\ColliderManager.h" />
+    <ClInclude Include="BalisongEngine\OCM\GameObject.h" />
+    <ClInclude Include="BalisongEngine\OCM\GameObjectCollection.h" />
+    <ClInclude Include="BalisongEngine\OCM\GameObjectRef.h" />
+    <ClInclude Include="BalisongEngine\OCM\GameObjectRefSet.h" />
+    <ClInclude Include="BalisongEngine\OCM\PrefabManager.h" />
+    <ClInclude Include="BalisongEngine\OCM\Prefabs.h" />
+    <ClInclude Include="BalisongEngine\OCM\Prefab.h" />
+    <ClInclude Include="BalisongEngine\Renderer\Camera.h" />
+    <ClInclude Include="BalisongEngine\Renderer\Graphics.h" />
+    <ClInclude Include="BalisongEngine\Renderer\Mesh.h" />
+    <ClInclude Include="BalisongEngine\Renderer\Renderer.h" />
+    <ClInclude Include="BalisongEngine\Renderer\Texture2D.h" />
+    <ClInclude Include="BalisongEngine\Scenes\BaseScene.h" />
+    <ClInclude Include="BalisongEngine\Scenes\CreditsScene.h" />
+    <ClInclude Include="BalisongEngine\Scenes\InputTestScene.h" />
+    <ClInclude Include="BalisongEngine\Scenes\LevelScene.h" />
+    <ClInclude Include="BalisongEngine\Scenes\MainMenuScene.h" />
+    <ClInclude Include="BalisongEngine\Scenes\SceneStateMachine.h" />
+    <ClInclude Include="BalisongEngine\Scenes\ShowcaseScene.h" />
+    <ClInclude Include="BalisongEngine\Scenes\SplashScene.h" />
+    <ClInclude Include="BalisongEngine\Scenes\TestScene.h" />
+    <ClInclude Include="irrKlang\include\ik_ESoundEngineOptions.h" />
+    <ClInclude Include="irrKlang\include\ik_ESoundOutputDrivers.h" />
+    <ClInclude Include="irrKlang\include\ik_EStreamModes.h" />
+    <ClInclude Include="irrKlang\include\ik_IAudioRecorder.h" />
+    <ClInclude Include="irrKlang\include\ik_IAudioStream.h" />
+    <ClInclude Include="irrKlang\include\ik_IAudioStreamLoader.h" />
+    <ClInclude Include="irrKlang\include\ik_IFileFactory.h" />
+    <ClInclude Include="irrKlang\include\ik_IFileReader.h" />
+    <ClInclude Include="irrKlang\include\ik_IRefCounted.h" />
+    <ClInclude Include="irrKlang\include\ik_irrKlangTypes.h" />
+    <ClInclude Include="irrKlang\include\ik_ISound.h" />
+    <ClInclude Include="irrKlang\include\ik_ISoundDeviceList.h" />
+    <ClInclude Include="irrKlang\include\ik_ISoundEffectControl.h" />
+    <ClInclude Include="irrKlang\include\ik_ISoundEngine.h" />
+    <ClInclude Include="irrKlang\include\ik_ISoundMixedOutputReceiver.h" />
+    <ClInclude Include="irrKlang\include\ik_ISoundSource.h" />
+    <ClInclude Include="irrKlang\include\ik_ISoundStopEventReceiver.h" />
+    <ClInclude Include="irrKlang\include\ik_IVirtualRefCounted.h" />
+    <ClInclude Include="irrKlang\include\ik_SAudioStreamFormat.h" />
+    <ClInclude Include="irrKlang\include\ik_vec3d.h" />
+    <ClInclude Include="irrKlang\include\irrKlang.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="irrKlang\lib\Winx64-visualStudio\irrKlang.exp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="irrKlang\lib\Winx64-visualStudio\irrKlang.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
